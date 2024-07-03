@@ -167,6 +167,85 @@ public class day2 {
     //     System.out.println(prime);
     // }
 
+        //Factorial
+
+    // int facto = 7;
+    // long answer = 1;
+    // for (int i = 1; i <= facto; i++) {
+    //     answer = i * answer;
+    // }
+    // System.out.println(answer);
     
+    // fibarchi series
+
+    // int a = 0;
+    // int b = 1;
+    // for (int i = 1; i <= 20; i++) {
+    //     System.out.println(a+b);
+    //     int t = a+b;
+    //     a = b;
+    //     b = t;
+    // }
+
+    //while loop 
+
+    // int start = 99;
+    // int end = 59;
+    // while (start >= end) {
+    //     System.out.println(start);
+    //     start--;
+    // }
+
+    // int a = 567;
+    // String b = "";
+    // while (a != 0) {
+    //     int digit = a%10;
+    //     b = b + digit;
+    //     a /= 10;
+    // }
+    // System.out.println(b);
+
+    // String a = "63548754";
+    // int b = a.length();
+    // if(b%2 != 0){
+    //     int c = (b + 2 - 1) / 2;
+    //     System.out.println(a.charAt(c-1));
+    // }
+    // else{
+    //     int k = (b/2) - 1;
+    //     System.out.println(a.charAt(k));
+    // }
+
+    //happy number 
+
+    
+        for(int i = 10; i<=20; i++){
+            if(i <=1){
+                System.out.println(false);
+            }
+            else{
+                int prime = 0;
+                for (int j = 2; j <= Math.sqrt(i); j++) {
+                    if(i%j == 0){
+                        prime = i;
+                        // System.out.println(prime);
+                        break;
+                    }
+                    else{
+                        System.out.println(i);
+                        break;
+                    }
+            
+        }
+    }
+    }
+
+    
+    
+    
+
+
+
+
     }
 }
