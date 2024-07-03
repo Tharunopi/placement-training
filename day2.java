@@ -219,19 +219,17 @@ public class day2 {
     //happy number 
 
     
-        for(int i = 10; i<=20; i++){
-            if(i <=1){
-                System.out.println(false);
-            }
-            else{
-                int prime = 0;
-                for (int j = 2; j <= Math.sqrt(i); j++) {
+        for(int i = 11; i<=20; i++){
+            
+            
+                int pr = 0;
+                for (int j = 2; j <=i/2; j++) {
+                    
                     if(i%j == 0){
-                        prime = i;
-                        // System.out.println(prime);
+                        pr = 1;
                         break;
                     }
-                    else{
+                    else if(pr == 0){
                         System.out.println(i);
                         break;
                     }
@@ -248,4 +246,4 @@ public class day2 {
 
 
     }
-}
+
