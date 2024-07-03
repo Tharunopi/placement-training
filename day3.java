@@ -59,7 +59,37 @@ public class day3 {
         //     System.out.println(b[i]);
         // }
         
+        // int a[] = {1,2,3,4};
+        // int b[] = {1,3,3,4};
+        // boolean v = true;
+        // for(int i = 0; i < a.length;i++){
+        //     if(a[i] != b[i]){
+        //         v = false;
+        //     }
+        // }
+        // System.out.println(v);
+
+        int a[] = {1,2,3,4};
+        int b[] = {4,3,2,1};
+        boolean v = true;
+        for (int i= 0;i<a.length;i++) {
+            boolean f = false;
+            for (int j = 0; j<a.length; j++) {
+                System.out.println(i + " " + j);
+                if(a[i] == b[j]){
+                    f = true;
+                    break;
+                }
+            }
+                 if(f==false){
+                    v = false;
+                    break;
+                }
+            
+            
         
+        }
+        System.out.println(v);
         }
     
     }
