@@ -56,12 +56,14 @@ public class day10 {
 public static  void upper_to_lower(String path){
     try(BufferedReader a = new BufferedReader(new FileReader(path))){
         String line;
+        String sec;
         while((line = a.readLine()) != null){
             for (int i = 0; i < line.length(); i++) {
                 // System.out.println(line.charAt(i));
                 int c = line.charAt(i);
                 if(c>='A' && c<='Z'){
                 try(FileWriter j = new FileWriter(path)){
+                
                 line = line.replace((char)c, ((char)(c+32)));
                 j.write(line);
                 j.write(System.lineSeparator());
